@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--row for Current principal-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        >
+        <!--a label that says Current principal-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Current Principal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:background="#00FF00"
+            />
+        <!--an editBox for Current principal-->
+        <EditText
+            android:id="@+id/inputCurrentPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:inputType="number|numberDecimal"
+            android:background="#999999"/>
+    </LinearLayout>
+
+    <!--row for Annual addition-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        >
+        <!--a label that says Annual addition-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Annual Addition"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="#00FF00"
+            />
+        <!--an editBox for Annual addition-->
+        <EditText
+            android:id="@+id/inputAnnualAddition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:inputType="number|numberDecimal"
+            android:background="#999999"/>
+    </LinearLayout>
+
+    <!--a row for Number of years-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        >
+        <!--a label that says Number of years-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Number of years"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="#00FF00"
+            />
+        <!--an editBix for Number of years-->
+        <EditText
+            android:id="@+id/inputNumberOfYears"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:inputType="number|numberDecimal"
+            android:background="#999999"/>
+    </LinearLayout>
+
+    <!--a row for Rate of return-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        >
+        <!--a label that says Rate of return-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Rate of return"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="#00FF00"
+            />
+        <!--an editBox for Rate of return-->
+        <EditText
+            android:id="@+id/inputRateOfReturn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:inputType="number|numberDecimal"
+            android:background="#999999"/>
+    </LinearLayout>
+
+    <!--submit button-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:background="#999999"
+            android:onClick="submit"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+<!-->  android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"  <!-->

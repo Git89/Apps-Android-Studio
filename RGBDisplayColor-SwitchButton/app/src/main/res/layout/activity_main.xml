@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--> view to diaplay color<!-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/displayColor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#000000"/>
+    </RelativeLayout>
+
+    <!--> LinearLayout horizontally to choose RED value<!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#FF0000"
+        >
+
+        <!--> SeekBar to choose red value<!-->
+        <SeekBar
+            android:id="@+id/labelSeekBar1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:progress="0"
+            android:max="255"
+            />
+        <!--> to show red value<!-->
+        <TextView
+            android:id="@+id/labelRedValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <!--> LinearLayout horizontally to choose Yellow value<!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#FFFF00"
+        >
+        <!--> SeekBar to choose yellow value<!-->
+        <SeekBar
+            android:id="@+id/labelSeekBar2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:progress="0"
+            android:max="255"
+            />
+        <!--> to show yellow value<!-->
+        <TextView
+            android:id="@+id/labelYellowValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="0"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <!--> LinearLayout horizontally to choose blue value<!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#0000FF"
+        >
+        <!--> SeekBar to choose blue value<!-->
+        <SeekBar
+            android:id="@+id/labelSeekBar3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:progress="0"
+            android:max="255"
+            />
+        <!--> to show blue value<!-->
+        <TextView
+            android:id="@+id/labelBlueValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="0"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

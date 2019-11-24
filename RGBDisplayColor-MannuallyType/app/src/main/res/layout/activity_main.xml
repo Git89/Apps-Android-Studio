@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--view used to show color-->
+    <TextView
+        android:id="@+id/labelDisplayColor"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#000000"
+        />
+    <!--value of red-->
+    <EditText
+        android:id="@+id/labelRedValue"
+        android:layout_below="@id/labelDisplayColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="@dimen/width_value"
+        android:layout_height="@dimen/height_value"
+        android:background="#FF0000"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="0"
+        android:text="0"
+        android:inputType="number"
+        android:textSize="@dimen/textSize"
+        android:textColor="#000000"
+        />
+    <!--value of blue-->
+    <EditText
+        android:id="@+id/labelBlueValue"
+        android:layout_below="@id/labelDisplayColor"
+        android:layout_toRightOf="@id/labelRedValue"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@id/labelRedValue"
+        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/width_value"
+        android:layout_height="@dimen/height_value"
+        android:padding="10dp"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="@dimen/textSize"
+        android:textColor="#000000"
+        />
+    <!--value of yellow-->
+    <EditText
+        android:id="@+id/labelYellowValue"
+        android:layout_below="@id/labelDisplayColor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/labelBlueValue"
+        android:layout_alignBottom="@id/labelRedValue"
+        android:layout_width="@dimen/width_value"
+        android:layout_height="@dimen/height_value"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="0"
+        android:text="0"
+        android:inputType="number"
+        android:textSize="@dimen/textSize"
+        android:textColor="#000000"
+        />
+
+
+</RelativeLayout>
